@@ -1,0 +1,14 @@
+c:\users\sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\bin\Debug\D1 DAL TUT.exe.config
+c:\users\sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\bin\Debug\D1 DAL TUT.exe
+c:\users\sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\bin\Debug\D1 DAL TUT.pdb
+c:\users\sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\obj\Debug\D1 DAL TUT.csprojResolveAssemblyReference.cache
+c:\users\sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\obj\Debug\D1_DAL_TUT.Form1.resources
+c:\users\sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\obj\Debug\D1_DAL_TUT.Properties.Resources.resources
+c:\users\sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\obj\Debug\D1 DAL TUT.csproj.GenerateResource.Cache
+c:\users\sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\obj\Debug\D1 DAL TUT.exe
+c:\users\sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\obj\Debug\D1 DAL TUT.pdb
+C:\Users\Sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\bin\Debug\FreelancersDAL.dll
+C:\Users\Sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\bin\Debug\MySql.Data.dll
+C:\Users\Sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\bin\Debug\FreelancersDAL.pdb
+C:\Users\Sean\Documents\Visual Studio 2015\Projects\D1\D1 DAL TUT\obj\Debug\D1_DAL_TUT.AddFreelancerForm.resources
+C:\Users\Sean\Documents\Visual Studio 2015\Projects\D1\D1 DAL TUT\bin\Debug\FreelancersDAL.dll.config
