@@ -1,0 +1,9 @@
+C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\bin\Debug\D1 DAL TUT.exe.config
+C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1 DAL TUT.exe
+C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1 DAL TUT.pdb
+C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\FreelancerHub.csprojResolveAssemblyReference.cache
+C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.AddFreelancerForm.resources
+C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.Form1.resources
+C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.Properties.Resources.resources
+C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.UpdateFreelancerForm.resources
+C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\FreelancerHub.csproj.GenerateResource.Cache

@@ -1,4 +1,5 @@
-﻿using FreelancersDAL.Models;
+﻿using FreelancersDAL.Services;
+using FreelancersDAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,7 @@ namespace FreelancersDAL.Services
         List<Freelancer> RetrieveFreelancersWithProjects();
         Freelancer RetrieveFreelancerByLastName(string lastname);
         Freelancer AddFreelancer(Freelancer freelancer);
+        Freelancer UpdateFreelancer(Freelancer freelancer);
+        bool DeleteFreelancer(int freelancerId);
     }
 }

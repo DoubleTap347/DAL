@@ -19,9 +19,9 @@ namespace D1_DAL_TUT
 
         public Form1()
         {
-
-            freelancersService = new FreelancersService();
             projectsService = new ProjectsService();
+            //freelancersService = new FreelancersService();
+            
             InitializeComponent();
         }
 
@@ -138,6 +138,16 @@ namespace D1_DAL_TUT
         private void button2_Click(object sender, EventArgs e)
         {
             new AddFreelancerForm().Show();
+        }
+
+        private void btnUpdateFreelancer_Click(object sender, EventArgs e)
+        {
+            new UpdateFreelancerForm().Show();
+        }
+
+        private void btnDeleteFreelancer_Click(object sender, EventArgs e)
+        {
+            new DeleteFreelancerForm().Show();
         }
     }
 }

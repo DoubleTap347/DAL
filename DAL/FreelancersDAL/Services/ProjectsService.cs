@@ -26,6 +26,7 @@ namespace FreelancersDAL.Services
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
+                //sql query
                 MySqlCommand command =
                     new MySqlCommand("SELECT Id, Title, FreelancerId " +
                     "FROM Projects ORDER BY Id;", conn);

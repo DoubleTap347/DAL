@@ -1,4 +1,5 @@
 ﻿using FreelancersDAL.Models;
+using FreelancersDAL.Services;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -9,8 +10,36 @@ using System.Threading.Tasks;
 
 namespace FreelancersDAL.Services
 {
-    public class FreelancersService : IFreelancersService
+    public class FreelancersService
     {
+        public bool DeleteFreelancer(int freelancerId)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                MySqlCommand command = new MySqlCommand(
+                    "DELETE FROM Freelancers " +
+                    "WHERE Id = @id;", conn);
+
+                MySqlParameter id =
+                    new MySqlParameter("@id", MySqlDbType.UInt32, 11);
+
+                id.Value = freelancerId;
+
+                command.Parameters.Add(id);
+                conn.Open();
+                command.Prepare();
+
+                int result = command.ExecuteNonQuery();
+
+                conn.Close();
+
+                if (result <= 0)
+                {
+                    return false;
+                }
+                return true;
+            }
+        }
         string connectionString = ConfigurationManager
             .ConnectionStrings["FreelancersConnection"]
             .ConnectionString.ToString();
@@ -27,25 +56,30 @@ namespace FreelancersDAL.Services
                     new MySqlParameter("@firstName", MySqlDbType.VarChar, 200);
                 MySqlParameter lastName =
                     new MySqlParameter("@lastName", MySqlDbType.VarChar, 200);
+                MySqlParameter id =
+                    new MySqlParameter("@id", MySqlDbType.UInt32, 11);
 
                 firstName.Value = freelancer.FirstName;
                 lastName.Value = freelancer.LastName;
+                id.Value = freelancer.Id;
 
                 command.Parameters.Add(firstName);
                 command.Parameters.Add(lastName);
+                command.Parameters.Add(id);
 
                 conn.Open();
                 command.Prepare();
 
                 int result = command.ExecuteNonQuery();
+
                 conn.Close();
 
-                if (result <=0)
+                if (result <= 0)
                 {
-                    freelancer = null;
+                    return null;
                 }
+                return freelancer;
             }
-            return freelancer;
         }
 
         public Freelancer RetrieveFreelancerByLastName(string lastName)
