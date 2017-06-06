@@ -89,6 +89,7 @@
             this.btnSaveFreelancer.TabIndex = 5;
             this.btnSaveFreelancer.Text = "Save new Freelancer";
             this.btnSaveFreelancer.UseVisualStyleBackColor = true;
+            this.btnSaveFreelancer.Click += new System.EventHandler(this.btnSaveFreelancer_Click);
             // 
             // btnDashboard
             // 
@@ -98,6 +99,7 @@
             this.btnDashboard.TabIndex = 6;
             this.btnDashboard.Text = "Back to Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // lblStatus
             // 

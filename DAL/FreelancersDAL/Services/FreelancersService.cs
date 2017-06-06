@@ -1,17 +1,79 @@
 ﻿using FreelancersDAL.Models;
-using FreelancersDAL.Services;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace FreelancersDAL.Services
 {
-    public class FreelancersService
+
+    public class FreelancersService : IFreelancersService
     {
+        //
+        string connectionString = ConfigurationManager
+            .ConnectionStrings["FreelancersConnection"]
+            .ConnectionString.ToString();
+
+        public DataSet GetDisconnectedData()
+        {
+            DataSet dataSetFreelancers = new DataSet();
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                //
+                MySqlCommand command = new MySqlCommand("SELECT * FROM Freelancers;", conn);
+                command.CommandType = System.Data.CommandType.Text;
+                MySqlDataAdapter dataAdapterFreelancers = new MySqlDataAdapter(command);
+
+                conn.Open();
+                dataAdapterFreelancers.Fill(dataSetFreelancers, "Freelancers");
+            }
+
+            return dataSetFreelancers;
+        }
+
+        public Freelancer UpdateFreelancer(Freelancer freelancer) // For updating the user details
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                MySqlCommand command = new MySqlCommand(
+                    "UPDATE Freelancers SET " +
+                    "FirstName = @firstName, " +
+                    "LastName = @lastName " +
+                    "WHERE Id = @id;", conn);
+
+                MySqlParameter firstName = new MySqlParameter("@firstName", MySqlDbType.VarChar, 200);
+                MySqlParameter lastName = new MySqlParameter("@lastName", MySqlDbType.VarChar, 200);
+                MySqlParameter id = new MySqlParameter("@id", MySqlDbType.UInt32, 11);
+
+                firstName.Value = freelancer.FirstName;
+                lastName.Value = freelancer.LastName;
+                id.Value = freelancer.Id;
+
+                command.Parameters.Add(firstName);
+                command.Parameters.Add(lastName);
+                command.Parameters.Add(id);
+
+                conn.Open();
+                command.Prepare();
+
+                int result = command.ExecuteNonQuery();
+
+                conn.Close();
+
+                if (result <= 0)
+                {
+                    return null;
+                }
+
+                return freelancer;
+            }
+        }
+
         public bool DeleteFreelancer(int freelancerId)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -37,12 +99,10 @@ namespace FreelancersDAL.Services
                 {
                     return false;
                 }
+
                 return true;
             }
         }
-        string connectionString = ConfigurationManager
-            .ConnectionStrings["FreelancersConnection"]
-            .ConnectionString.ToString();
 
         public Freelancer AddFreelancer(Freelancer freelancer)
         {
@@ -56,30 +116,25 @@ namespace FreelancersDAL.Services
                     new MySqlParameter("@firstName", MySqlDbType.VarChar, 200);
                 MySqlParameter lastName =
                     new MySqlParameter("@lastName", MySqlDbType.VarChar, 200);
-                MySqlParameter id =
-                    new MySqlParameter("@id", MySqlDbType.UInt32, 11);
 
                 firstName.Value = freelancer.FirstName;
                 lastName.Value = freelancer.LastName;
-                id.Value = freelancer.Id;
 
                 command.Parameters.Add(firstName);
                 command.Parameters.Add(lastName);
-                command.Parameters.Add(id);
 
                 conn.Open();
                 command.Prepare();
 
                 int result = command.ExecuteNonQuery();
-
                 conn.Close();
 
                 if (result <= 0)
                 {
-                    return null;
+                    freelancer = null;
                 }
-                return freelancer;
             }
+            return freelancer;
         }
 
         public Freelancer RetrieveFreelancerByLastName(string lastName)

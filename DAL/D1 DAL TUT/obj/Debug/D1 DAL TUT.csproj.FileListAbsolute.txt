@@ -12,17 +12,20 @@ C:\Users\Sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\bin\Debug\MySq
 C:\Users\Sean\documents\visual studio 2015\Projects\D1\D1 DAL TUT\bin\Debug\FreelancersDAL.pdb
 C:\Users\Sean\Documents\Visual Studio 2015\Projects\D1\D1 DAL TUT\obj\Debug\D1_DAL_TUT.AddFreelancerForm.resources
 C:\Users\Sean\Documents\Visual Studio 2015\Projects\D1\D1 DAL TUT\bin\Debug\FreelancersDAL.dll.config
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\bin\Debug\D1 DAL TUT.exe.config
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1 DAL TUT.exe
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1 DAL TUT.pdb
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\bin\Debug\D1 DAL TUT.exe
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\bin\Debug\D1 DAL TUT.pdb
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\bin\Debug\FreelancersDAL.dll
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\bin\Debug\MySql.Data.dll
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\bin\Debug\FreelancersDAL.pdb
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1 DAL TUT.csprojResolveAssemblyReference.cache
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.AddFreelancerForm.resources
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.Form1.resources
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.Properties.Resources.resources
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1 DAL TUT.csproj.GenerateResource.Cache
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.UpdateFreelancerForm.resources
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\bin\Debug\D1 DAL TUT.exe.config
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\bin\Debug\D1 DAL TUT.exe
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\bin\Debug\D1 DAL TUT.pdb
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\bin\Debug\FreelancersDAL.dll
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\bin\Debug\MySql.Data.dll
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\bin\Debug\FreelancersDAL.pdb
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\bin\Debug\FreelancersDAL.dll.config
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\obj\Debug\D1 DAL TUT.csprojResolveAssemblyReference.cache
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.AddFreelancerForm.resources
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.Properties.Resources.resources
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\obj\Debug\D1 DAL TUT.csproj.GenerateResource.Cache
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\obj\Debug\D1 DAL TUT.exe
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\obj\Debug\D1 DAL TUT.pdb
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.Dashboard.resources
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.DeleteFreelancerForm.resources
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.UpdateFreelancerForm.resources
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\D1 DAL TUT\obj\Debug\D1_DAL_TUT.DataTableForm.resources

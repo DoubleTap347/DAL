@@ -5,10 +5,17 @@ C:\Users\Sean\documents\visual studio 2015\Projects\D1\FreelancersDAL\bin\Debug\
 C:\Users\Sean\documents\visual studio 2015\Projects\D1\FreelancersDAL\bin\Debug\MySql.Data.dll
 C:\Users\Sean\documents\visual studio 2015\Projects\D1\FreelancersDAL\obj\Debug\FreelancersDAL.dll
 C:\Users\Sean\documents\visual studio 2015\Projects\D1\FreelancersDAL\obj\Debug\FreelancersDAL.pdb
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.dll.config
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.dll
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.pdb
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\FreelancersDAL\bin\Debug\MySql.Data.dll
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.csprojResolveAssemblyReference.cache
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.dll
-C:\Users\j378234\Documents\Visual Studio 2015\Projects\DAL-master\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.pdb
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.dll.config
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.dll
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.pdb
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\FreelancersDAL\bin\Debug\MySql.Data.dll
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.dll
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.pdb
+C:\Users\Sean\Documents\Visual Studio 2017\Projects\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.csprojResolveAssemblyReference.cache
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\S.Danzo DAL\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.dll.config
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\S.Danzo DAL\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.dll
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\S.Danzo DAL\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.pdb
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\S.Danzo DAL\DAL\FreelancersDAL\bin\Debug\MySql.Data.dll
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\S.Danzo DAL\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.csprojResolveAssemblyReference.cache
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\S.Danzo DAL\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.dll
+C:\Users\J378234\Documents\Visual Studio 2015\Projects\S.Danzo DAL\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.pdb

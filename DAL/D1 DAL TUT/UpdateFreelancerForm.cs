@@ -15,46 +15,61 @@ namespace D1_DAL_TUT
     public partial class UpdateFreelancerForm : Form
     {
         private readonly IFreelancersService freelancersService;
-
         public UpdateFreelancerForm()
         {
             freelancersService = new FreelancersService();
             InitializeComponent();
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnSaveFreelancer_Click(object sender, EventArgs e)
+        private void btnUpdateFreelancer_Click(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(txtFirstName.Text) &&
                 !String.IsNullOrWhiteSpace(txtFirstName.Text) &&
                 !String.IsNullOrEmpty(txtLastName.Text) &&
-                !String.IsNullOrWhiteSpace(txtLastName.Text))
+                !String.IsNullOrWhiteSpace(txtLastName.Text) &&
+                !String.IsNullOrEmpty(txtId.Text) &&
+                !String.IsNullOrWhiteSpace(txtId.Text))
             {
-                try
+                int id = 0;
+                
+                if (int.TryParse(txtId.Text, out id))
                 {
-                    Freelancer f = new Freelancer(0, txtFirstName.Text, txtLastName.Text);
-
-                    f = freelancersService.UpdateFreelancer(f);
-
-                    if (f != null)
+                    try
                     {
-                        lblStatus.Text = $"Successfully added Freelancer {f.FirstName} {f.LastName}";
+                        Freelancer f = new Freelancer(
+                        id,
+                        txtFirstName.Text,
+                        txtLastName.Text
+                        );
+
+                        f = freelancersService.UpdateFreelancer(f);
+
+                        if (f != null)
+                        {
+                            lblStatus.Text = $"Successfully updated Freelancer " +
+                                $"{f.FirstName} {f.LastName}!";
+                        }
+                        else
+                        {
+                            lblStatus.Text = $"Sorry, couldn't update freelancer.";
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        lblStatus.Text = "Unable to add freelancer";
+                        lblStatus.Text = "An error has occurred!";
+                        lblError.Text = ex.Message;
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    lblStatus.Text = "An error has occured!";
-                    lblError.Text = ex.Message;
+                    lblStatus.Text = "Invalid Freelancer Id";
                 }
             }
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
