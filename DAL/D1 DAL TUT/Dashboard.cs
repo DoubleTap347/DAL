@@ -21,7 +21,7 @@ namespace D1_DAL_TUT
         {
 
             freelancersService = new FreelancersService();
-            projectsService = new ProjectsService();// create instance of project service class
+            projectsService = new ProjectsService();
             InitializeComponent();
         }
 

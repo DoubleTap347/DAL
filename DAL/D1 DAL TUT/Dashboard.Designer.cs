@@ -114,7 +114,6 @@
             this.btnGetSingleFreelancer.TabIndex = 7;
             this.btnGetSingleFreelancer.Text = "Look up freelancer by last name";
             this.btnGetSingleFreelancer.UseVisualStyleBackColor = true;
-            this.btnGetSingleFreelancer.Click += new System.EventHandler(this.btnGetSingleFreelancer_Click);
             // 
             // btnSearchProjects
             // 

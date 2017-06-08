@@ -49,8 +49,8 @@ namespace D1_DAL_TUT
                     }
                     catch (Exception ex)
                     {
-                        lblStatus.Text = "An error has occurred!";// change the label to display and error has occurred
-                        lblError.Text = ex.Message;// display the exception in the label
+                        lblStatus.Text = "An error has occurred!";
+                        lblError.Text = ex.Message;
                     }
                 }
                 else

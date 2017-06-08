@@ -10,7 +10,7 @@ namespace FreelancersDAL.Services
 {
     public interface IFreelancersService
     {
-
+        //Declare new methods
         List<Freelancer> RetrieveFreelancers();
         List<Freelancer> RetrieveFreelancersWithProjects();
         Freelancer RetrieveFreelancerByLastName(string lastname);

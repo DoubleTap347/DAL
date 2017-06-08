@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
-using MySql.Data.MySqlClient; //allow us to use the MySql connector
+using MySql.Data.MySqlClient;
 using System.Data;
 using System.Data.Common;
 using FreelancersDAL.Services;
@@ -13,9 +13,9 @@ using FreelancersDAL.Services;
 
 namespace FreelancersDAL.Services
 {
-    public class ProjectsService : IProjectsService // Implement the IProjectsService interface
+    public class ProjectsService : IProjectsService
     {
-        List<Project> projects = new List<Project>(); //create and instantiate the List<Project> object
+        List<Project> projects = new List<Project>();
         string connectionString = ConfigurationManager.ConnectionStrings["FreelancersConnection"].ConnectionString.ToString();
 
         public List<Project> RetrieveProjects()
@@ -26,11 +26,11 @@ namespace FreelancersDAL.Services
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
-                //This is the command that holds the query that is sent to the database
+                //Sql query to be executed in the database
                 MySqlCommand command =
                     new MySqlCommand("SELECT Id, Title, FreelancerId " +
                     "FROM Projects ORDER BY Id;", conn);
-                conn.Open(); //Open the connection here
+                conn.Open();
 
                 dataReader = command.ExecuteReader();
 

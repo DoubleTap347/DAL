@@ -24,23 +24,24 @@ namespace D1_DAL_TUT
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            this.Close(); //Close the window
+            this.Close();
         }
 
         private void btnSaveFreelancer_Click(object sender, EventArgs e)
         {
+            //if the data our user entered is null we go into the try catch below
             if(!String.IsNullOrEmpty(txtFirstName.Text) &&
                 !String.IsNullOrWhiteSpace(txtFirstName.Text) &&
                 !String.IsNullOrEmpty(txtLastName.Text) &&
                 !String.IsNullOrWhiteSpace(txtLastName.Text))
             {
-                try
+                try//starting the try catch block
                 {
-                    Freelancer f = new Freelancer(0, txtFirstName.Text, txtLastName.Text);
-
+                    Freelancer f = new Freelancer(0, txtFirstName.Text, txtLastName.Text);//Hold data in the freelancer object. Made possible because of the Parameterized Constructor made earlier
+                    //we need to add in the Id as 0 otherwise the constructor will throw an error because it takes in 3 parameters.
                     f = freelancersService.AddFreelancer(f);
-
-                    if (f != null) //if input is not null
+                    //Assign f to the object created by Freelancer. If there is data our method will succeed. If it fails it will be null
+                    if (f != null)
                     {
                         lblStatus.Text = $"Successfully added Freelancer {f.FirstName} {f.LastName}";
                     }
@@ -49,7 +50,7 @@ namespace D1_DAL_TUT
                         lblStatus.Text = "Unable to add freelancer";
                     }
                 }
-                catch (Exception ex) // catching the exception and making the status label say "An error has occured!" and the error label display the exception message: ex.Message
+                catch (Exception ex)//If something goes wrng prevent crash and display to user
                 {
                     lblStatus.Text = "An error has occured!";
                     lblError.Text = ex.Message;
