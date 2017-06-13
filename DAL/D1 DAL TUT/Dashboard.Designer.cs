@@ -28,50 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnFreelancersAndProjects = new System.Windows.Forms.Button();
             this.btnProjects = new System.Windows.Forms.Button();
-            this.btnFreelancers = new System.Windows.Forms.Button();
             this.listBoxResults = new System.Windows.Forms.ListBox();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.txtFreelancerName = new System.Windows.Forms.TextBox();
             this.btnGetSingleFreelancer = new System.Windows.Forms.Button();
-            this.btnSearchProjects = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnUpdateFreelancer = new System.Windows.Forms.Button();
-            this.btnDeleteFreelancer = new System.Windows.Forms.Button();
             this.btnTables = new System.Windows.Forms.Button();
+            this.btnDeleteFreelancer = new System.Windows.Forms.Button();
+            this.btnUpdateFreelancer = new System.Windows.Forms.Button();
+            this.btnSearchProjects = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnFreelancersAndProjects
-            // 
-            this.btnFreelancersAndProjects.Location = new System.Drawing.Point(102, 29);
-            this.btnFreelancersAndProjects.Name = "btnFreelancersAndProjects";
-            this.btnFreelancersAndProjects.Size = new System.Drawing.Size(144, 23);
-            this.btnFreelancersAndProjects.TabIndex = 0;
-            this.btnFreelancersAndProjects.Text = "FreelancersAndProjects";
-            this.btnFreelancersAndProjects.UseVisualStyleBackColor = true;
-            this.btnFreelancersAndProjects.Click += new System.EventHandler(this.btnFreelancersAndProjects_Click);
             // 
             // btnProjects
             // 
-            this.btnProjects.Location = new System.Drawing.Point(252, 29);
+            this.btnProjects.Location = new System.Drawing.Point(64, 26);
             this.btnProjects.Name = "btnProjects";
             this.btnProjects.Size = new System.Drawing.Size(75, 23);
             this.btnProjects.TabIndex = 1;
-            this.btnProjects.Text = "Projects";
+            this.btnProjects.Text = "User";
             this.btnProjects.UseVisualStyleBackColor = true;
             this.btnProjects.Click += new System.EventHandler(this.btnProjects_Click);
-            // 
-            // btnFreelancers
-            // 
-            this.btnFreelancers.Location = new System.Drawing.Point(12, 29);
-            this.btnFreelancers.Name = "btnFreelancers";
-            this.btnFreelancers.Size = new System.Drawing.Size(75, 23);
-            this.btnFreelancers.TabIndex = 2;
-            this.btnFreelancers.Text = "Freelancers";
-            this.btnFreelancers.UseVisualStyleBackColor = true;
-            this.btnFreelancers.Click += new System.EventHandler(this.btnFreelancers_Click);
             // 
             // listBoxResults
             // 
@@ -115,16 +93,6 @@
             this.btnGetSingleFreelancer.Text = "Look up freelancer by last name";
             this.btnGetSingleFreelancer.UseVisualStyleBackColor = true;
             // 
-            // btnSearchProjects
-            // 
-            this.btnSearchProjects.Location = new System.Drawing.Point(313, 97);
-            this.btnSearchProjects.Name = "btnSearchProjects";
-            this.btnSearchProjects.Size = new System.Drawing.Size(123, 23);
-            this.btnSearchProjects.TabIndex = 9;
-            this.btnSearchProjects.Text = "Look up projects";
-            this.btnSearchProjects.UseVisualStyleBackColor = true;
-            this.btnSearchProjects.Click += new System.EventHandler(this.btnSearchProjects_Click);
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(15, 177);
@@ -135,15 +103,15 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnUpdateFreelancer
+            // btnTables
             // 
-            this.btnUpdateFreelancer.Location = new System.Drawing.Point(184, 177);
-            this.btnUpdateFreelancer.Name = "btnUpdateFreelancer";
-            this.btnUpdateFreelancer.Size = new System.Drawing.Size(157, 23);
-            this.btnUpdateFreelancer.TabIndex = 12;
-            this.btnUpdateFreelancer.Text = "Update Freelancer";
-            this.btnUpdateFreelancer.UseVisualStyleBackColor = true;
-            this.btnUpdateFreelancer.Click += new System.EventHandler(this.btnUpdateFreelancer_Click);
+            this.btnTables.Location = new System.Drawing.Point(12, 385);
+            this.btnTables.Name = "btnTables";
+            this.btnTables.Size = new System.Drawing.Size(84, 29);
+            this.btnTables.TabIndex = 14;
+            this.btnTables.Text = "Data Editor";
+            this.btnTables.UseVisualStyleBackColor = true;
+            this.btnTables.Click += new System.EventHandler(this.btnTables_Click);
             // 
             // btnDeleteFreelancer
             // 
@@ -155,15 +123,25 @@
             this.btnDeleteFreelancer.UseVisualStyleBackColor = true;
             this.btnDeleteFreelancer.Click += new System.EventHandler(this.btnDeleteFreelancer_Click);
             // 
-            // btnTables
+            // btnUpdateFreelancer
             // 
-            this.btnTables.Location = new System.Drawing.Point(12, 385);
-            this.btnTables.Name = "btnTables";
-            this.btnTables.Size = new System.Drawing.Size(84, 29);
-            this.btnTables.TabIndex = 14;
-            this.btnTables.Text = "Data Editor";
-            this.btnTables.UseVisualStyleBackColor = true;
-            this.btnTables.Click += new System.EventHandler(this.btnTables_Click);
+            this.btnUpdateFreelancer.Location = new System.Drawing.Point(184, 177);
+            this.btnUpdateFreelancer.Name = "btnUpdateFreelancer";
+            this.btnUpdateFreelancer.Size = new System.Drawing.Size(157, 23);
+            this.btnUpdateFreelancer.TabIndex = 12;
+            this.btnUpdateFreelancer.Text = "Update Freelancer";
+            this.btnUpdateFreelancer.UseVisualStyleBackColor = true;
+            this.btnUpdateFreelancer.Click += new System.EventHandler(this.btnUpdateFreelancer_Click);
+            // 
+            // btnSearchProjects
+            // 
+            this.btnSearchProjects.Location = new System.Drawing.Point(313, 97);
+            this.btnSearchProjects.Name = "btnSearchProjects";
+            this.btnSearchProjects.Size = new System.Drawing.Size(123, 23);
+            this.btnSearchProjects.TabIndex = 9;
+            this.btnSearchProjects.Text = "Look up projects";
+            this.btnSearchProjects.UseVisualStyleBackColor = true;
+            this.btnSearchProjects.Click += new System.EventHandler(this.btnSearchProjects_Click);
             // 
             // Dashboard
             // 
@@ -180,9 +158,7 @@
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.listBoxResults);
-            this.Controls.Add(this.btnFreelancers);
             this.Controls.Add(this.btnProjects);
-            this.Controls.Add(this.btnFreelancersAndProjects);
             this.Name = "Dashboard";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -191,20 +167,17 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnFreelancersAndProjects;
         private System.Windows.Forms.Button btnProjects;
-        private System.Windows.Forms.Button btnFreelancers;
         private System.Windows.Forms.ListBox listBoxResults;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.TextBox txtFreelancerName;
         private System.Windows.Forms.Button btnGetSingleFreelancer;
-        private System.Windows.Forms.Button btnSearchProjects;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnUpdateFreelancer;
-        private System.Windows.Forms.Button btnDeleteFreelancer;
         private System.Windows.Forms.Button btnTables;
+        private System.Windows.Forms.Button btnDeleteFreelancer;
+        private System.Windows.Forms.Button btnUpdateFreelancer;
+        private System.Windows.Forms.Button btnSearchProjects;
     }
 }
 

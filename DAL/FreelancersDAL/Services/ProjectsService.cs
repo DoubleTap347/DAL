@@ -13,43 +13,43 @@ using FreelancersDAL.Services;
 
 namespace FreelancersDAL.Services
 {
-    public class ProjectsService : IProjectsService
+    public class ProjectsService : IProjectService
     {
-        List<Project> projects = new List<Project>();
-        string connectionString = ConfigurationManager.ConnectionStrings["FreelancersConnection"].ConnectionString.ToString();
+        //List<Project> projects = new List<Project>();
+        //string connectionString = ConfigurationManager.ConnectionStrings["CustardConnection"].ConnectionString.ToString();
 
-        public List<Project> RetrieveProjects()
-        {
-            List<Project> projects = new List<Project>();
+        //public List<Project> RetrieveProjects()
+        //{
+        //    List<Project> projects = new List<Project>();
 
-            MySqlDataReader dataReader;
+        //    MySqlDataReader dataReader;
 
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
-            {
-                //Sql query to be executed in the database
-                MySqlCommand command =
-                    new MySqlCommand("SELECT Id, Title, FreelancerId " +
-                    "FROM Projects ORDER BY Id;", conn);
-                conn.Open();
+        //    using (MySqlConnection conn = new MySqlConnection(connectionString))
+        //    {
+        //        //Sql query to be executed in the database
+        //        MySqlCommand command =
+        //            new MySqlCommand("SELECT Id, First_Name, Last_Name " +
+        //            "FROM customers ORDER BY Id;", conn);
+        //        conn.Open();
 
-                dataReader = command.ExecuteReader();
+        //        dataReader = command.ExecuteReader();
 
-                if (dataReader.HasRows)
-                {
-                    while (dataReader.Read())
-                    {
-                        projects.Add(new Project
-                            (
-                                dataReader.GetInt32("Id"),
-                                dataReader.GetString("Title"),
-                                dataReader.GetInt32("FreelancerId")
-                                ));
-                    }
-                }
-                conn.Close();
-            }
+        //        if (dataReader.HasRows)
+        //        {
+        //            while (dataReader.Read())
+        //            {
+        //                projects.Add(new Project
+        //                    (
+        //                        dataReader.GetInt32("Id"),
+        //                        dataReader.GetString("Title"),
+        //                        dataReader.GetInt32("FreelancerId")
+        //                        ));
+        //            }
+        //        }
+        //        conn.Close();
+        //    }
 
-                return projects;
-        }
+        //        return projects;
+        //}
     }
 }

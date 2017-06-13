@@ -14,11 +14,11 @@ namespace D1_DAL_TUT
 {
     public partial class AddFreelancerForm : Form
     {
-        private readonly IFreelancersService freelancersService;
+        private readonly ICustomerService freelancersService;
 
         public AddFreelancerForm()
         {
-            freelancersService = new FreelancersService();
+            freelancersService = new CustomerService();
             InitializeComponent();
         }
 
@@ -37,20 +37,20 @@ namespace D1_DAL_TUT
             {
                 try//starting the try catch block
                 {
-                    Freelancer f = new Freelancer(0, txtFirstName.Text, txtLastName.Text);//Hold data in the freelancer object. Made possible because of the Parameterized Constructor made earlier
+                    Customer f = new Customer(0, txtFirstName.Text, txtLastName.Text);//Hold data in the freelancer object. Made possible because of the Parameterized Constructor made earlier
                     //we need to add in the Id as 0 otherwise the constructor will throw an error because it takes in 3 parameters.
                     f = freelancersService.AddFreelancer(f);
                     //Assign f to the object created by Freelancer. If there is data our method will succeed. If it fails it will be null
                     if (f != null)
                     {
-                        lblStatus.Text = $"Successfully added Freelancer {f.FirstName} {f.LastName}";
+                        lblStatus.Text = $"Successfully added Customer {f.FirstName} {f.LastName}";
                     }
                     else
                     {
-                        lblStatus.Text = "Unable to add freelancer";
+                        lblStatus.Text = "Unable to add Customer";
                     }
                 }
-                catch (Exception ex)//If something goes wrng prevent crash and display to user
+                catch (Exception ex)//If something goes wrong prevent crash and display to user
                 {
                     lblStatus.Text = "An error has occured!";
                     lblError.Text = ex.Message;

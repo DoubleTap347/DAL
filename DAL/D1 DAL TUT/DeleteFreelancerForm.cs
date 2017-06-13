@@ -13,25 +13,26 @@ namespace D1_DAL_TUT
 {
     public partial class DeleteFreelancerForm : Form
     {
-        private readonly IFreelancersService freelancersService;
+        private readonly ICustomerService freelancersService;
         public DeleteFreelancerForm()
         {
-            freelancersService = new FreelancersService();
+            freelancersService = new CustomerService();
             InitializeComponent();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            Close(); //removed the "this" VS thinks it should be simplified. Let's see if this breaks later on.
+            this.Close(); //removed the "this" VS thinks it should be simplified. Let's see if this breaks later on.
         }
 
         private void btnDeleteFreelancer_Click(object sender, EventArgs e)
         {
+            //if it is nulll, don't work. pls m8
             if (!String.IsNullOrEmpty(txtId.Text) &&
                 !String.IsNullOrWhiteSpace(txtId.Text))
             {
-                int id = 0;
-
+                int id = 0;//initialize id as 0
+                //try parse the input (txtId.Text)
                 if (int.TryParse(txtId.Text, out id))
                 {
                     try

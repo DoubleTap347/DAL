@@ -19,3 +19,10 @@ C:\Users\Sean\Documents\Visual Studio 2017\Projects\S.Danzo DAL\DAL\FreelancersD
 C:\Users\Sean\Documents\Visual Studio 2017\Projects\S.Danzo DAL\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.csprojResolveAssemblyReference.cache
 C:\Users\Sean\Documents\Visual Studio 2017\Projects\S.Danzo DAL\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.dll
 C:\Users\Sean\Documents\Visual Studio 2017\Projects\S.Danzo DAL\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.pdb
+C:\Users\J378234\Desktop\DAL-master\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.dll.config
+C:\Users\J378234\Desktop\DAL-master\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.dll
+C:\Users\J378234\Desktop\DAL-master\DAL\FreelancersDAL\bin\Debug\FreelancersDAL.pdb
+C:\Users\J378234\Desktop\DAL-master\DAL\FreelancersDAL\bin\Debug\MySql.Data.dll
+C:\Users\J378234\Desktop\DAL-master\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.csprojResolveAssemblyReference.cache
+C:\Users\J378234\Desktop\DAL-master\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.dll
+C:\Users\J378234\Desktop\DAL-master\DAL\FreelancersDAL\obj\Debug\FreelancersDAL.pdb

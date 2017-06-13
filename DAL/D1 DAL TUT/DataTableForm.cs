@@ -13,11 +13,11 @@ namespace D1_DAL_TUT
 {
     public partial class DataTableForm : Form
     {
-        private readonly IFreelancersService freelancersService;
+        private readonly ICustomerService freelancersService;
         private DataSet dataSetFreelancers;
         public DataTableForm()
         {
-            freelancersService = new FreelancersService();
+            freelancersService = new CustomerService();
             this.gridViewFreelancers = new DataGridView();
 
             InitializeComponent();
